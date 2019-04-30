@@ -1,0 +1,7 @@
+<h1>This the Index</h1>
+<% @cats.each do |cat| %>
+    <%= cat.name + " | " + cat.color + " | " + cat.description %>
+    <a href="<%= cat_url(cat) %>">Show cat</a>
+    <a href="<%= edit_cat_url(cat) %>">Edit cat</a>
+    <br/>
+<% end %>
